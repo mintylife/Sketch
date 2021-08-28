@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  width: 70px;
+  width: 45px;
   left: 0;
   top: 0;
   height: 100vh;
@@ -22,6 +22,11 @@
   width: 80px;
 } */
 
+.logo {
+  z-index: 1;
+  /* display: inline-block; */
+  object-fit: contain;
+}
 .items {
 }
 

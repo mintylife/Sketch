@@ -2,6 +2,7 @@ import React from "react";
 // import { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
 import "./Sidebar.css";
+import logo from "../assets/logo/logo-orange.svg";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsPersonFill } from "react-icons/bs";
 import { IoMdNotifications } from "react-icons/io";
@@ -14,6 +15,7 @@ function Sidebar() {
   return (
     <>
       <nav className="sidebar">
+        <img className="logo" alt="logo" src={logo} />
         <ul className="content-links">
           <AiOutlineHome className="icon home" />
           <BsPersonFill className="icon profile" />
