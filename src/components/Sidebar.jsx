@@ -1,8 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Sidebar.css";
 import logo from "../assets/logo/logo-orange.svg";
+
 import { BiHomeHeart as HomeIcon } from "react-icons/bi";
 import { BsPersonFill as PersonalPageIcon } from "react-icons/bs";
 import { IoMdNotifications as NotificationsIcon } from "react-icons/io";
@@ -32,40 +33,68 @@ function Sidebar() {
         onMouseEnter={toggleHover}
         onMouseLeave={toggleHover}
       >
-        <div className="sidebar-links content-group">
-          <div className="sidebar-item">
+        <div className="logo-container">
+          <img className="logo" alt="logo" src={logo} />
+          <h1 className={`logo-text ${hovered}`}>QT21</h1>
+        </div>
+        <div className="half-empty-space" />
+        <div className="sidebar-menu content-group">
+          <Link className="sidebar-item" to="/home">
             <HomeIcon className="icon home" />
-            <p className={hovered}>Home</p>
-          </div>
+            <p className={hovered}>Главная</p>
+          </Link>
 
-          <div className="sidebar-item">
+          <Link className="sidebar-item" to="/profile">
             <PersonalPageIcon className="icon profile" />
-            <p className={hovered}>Profile</p>
-          </div>
+            <p className={hovered}>Профиль</p>
+          </Link>
 
-          <div className="sidebar-item">
+          <Link className="sidebar-item" to="/courses">
             <span className="icon course" />
-            <span className={hovered}>Course</span>
-          </div>
+            <span className={hovered}>Курс</span>
+          </Link>
 
-          <div className="sidebar-item">
+          <Link className="sidebar-item" to="/podcasts">
             <span className="icon podcasts" />
-            <span className={hovered}>Podcsts</span>
-          </div>
+            <span className={hovered}>Подкасты</span>
+          </Link>
 
-          <div className="sidebar-item">
+          <Link className="sidebar-item" to="/games">
             <span className="icon games" />
-            <span className={hovered}>Games</span>
-          </div>
+            <span className={hovered}>Игры</span>
+          </Link>
 
-          <div className="sidebar-item">
+          <Link className="sidebar-item" to="/videos">
             <span className="icon videos" />
-            <span className={hovered}>Videos</span>
+            <span className={hovered}>Видео</span>
+          </Link>
+
+          <Link className="sidebar-item" to="/exercises">
+            <span className="icon exercises" />
+            <span className={hovered}>Упражнения</span>
+          </Link>
+        </div>
+        <div className="empty-space" />
+
+        <div className="sidebar-menu settings-group">
+          <div className="sidebar-item">
+            <NotificationsIcon className="icon notifications" />
+            <p className={hovered}>Уведомления</p>
           </div>
 
           <div className="sidebar-item">
-            <span className="icon exercises" />
-            <span className={hovered}>Exercises</span>
+            <LanguageIcon className="icon language" />
+            <p className={hovered}>Язык</p>
+          </div>
+
+          <div className="sidebar-item">
+            <EmailIcon className="icon email" />
+            <span className={hovered}>Обратная Связь</span>
+          </div>
+
+          <div className="sidebar-item">
+            <SettingsIcon className="icon settings" />
+            <span className={hovered}>Настройки</span>
           </div>
         </div>
       </nav>
