@@ -145,5 +145,59 @@
   color: white;
 }
 
+/* ! ---------------- SECTION 2 ---------------- ! */
 .course-information {
+  box-sizing: border-box;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  padding-top: 125px;
+  padding-left: 75px;
+  padding-right: 35px;
+  margin-right: 35px;
+
+  width: 100%;
+}
+
+.bulletpoints-block {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#foryouif-title {
+  flex: 1;
+  /* color: #f042ff; */
+  color: #fff;
+}
+
+.bulletpoints-list {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.bulletpoints-list * {
+  padding-bottom: 10px;
+}
+
+.highlights-block {
+  flex: 1;
+}
+
+#certificate {
+}
+
+#online {
+}
+
+#schedule {
+}
+
+#duration {
 }

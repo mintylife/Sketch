@@ -2,47 +2,26 @@ import React from "react";
 import "./Course.css";
 import { BiDonateHeart as LikedByIcon } from "react-icons/bi";
 import { Button } from "@material-ui/core";
+import {
+  title,
+  subtitle,
+  description,
+  numOfmodules,
+  courseType,
+} from "../assets/texts/textForCourseP.js";
 
 export const Course = (props) => {
-  var description =
-    "Полноценный курс казахского, в котором Вы начинаете с азов и постепенно поднимаетесь до  продвинутого уровня владения казахским. Пройдя данный курс, Вы будете комфортно себя чувствовать и сможете свободно выражать свои мысли, а также понимать других на разоличные темы. ";
-
-  var numOfmodules = 6;
-  var courseType = "F0TH";
-  var numOfVideos = 6;
-
-  var audience = [
-    "почти или вообще не говорите по-казахски, хотя возможно знаете элементарную грамматику и имеете ограниченный словарный запас;",
-    "боитесь делать ошибки, стесняетесь акцента и/или своего незнания языка;",
-    "ываорсифыовиаорфиыва;",
-  ];
-
-  var duration = "";
-
-  var courseGoals = [
-    "Свободно выражать свои мысли, а также хорошо понимать других в разного рода ситуациях: повседневных, академических, профессиональных и даже литературных.",
-    "Начать и не бросить свое обучение!",
-  ];
-
-  var courseStructure = "";
-
   return (
     <div className="course-container">
       <div className="header">
         <div id="rectangle">
           <div className="overview">
-            <div className="course-title">Компас. Логика языка.</div>
-            <div className="second-title">Бірінші деңгей</div>
+            <div className="course-title">{title}</div>
+            <div className="second-title">{subtitle}</div>
             <div className="heart-ranking">
               <LikedByIcon /> <span classname="people-num">135</span>
             </div>
-            <p className="intro-block">
-              Полноценный курс казахского, в котором Вы начинаете с азов и
-              постепенно поднимаетесь до продвинутого уровня владения казахским.
-              Пройдя данный курс, Вы будете комфортно себя чувствовать и сможете
-              свободно выражать свои мысли, а также понимать других на
-              разоличные темы.
-            </p>
+            <p className="intro-block">{description}</p>
             <div className="info-buttons">
               <Button variant="contained" id="module-num">
                 6 курсов
@@ -62,9 +41,45 @@ export const Course = (props) => {
       </div>
 
       <div className="course-information">
-        <div className="foryouif-block"></div>
-        <div className="bulletpoints-block"></div>
-        <div className="goals-block"></div>
+        <div className="bulletpoints-block">
+          <h4 id="foryouif-title">Этот курс для Вас, если : </h4>
+          <ul className="bulletpoints-list">
+            <li className="foryouif-bullet">
+              почти или вообще не говорите по-казахски, хотя возможно знаете
+              элементарную грамматику и имеете ограниченный словарный запас;
+            </li>
+            <li className="foryouif-bullet">
+              боитесь делать ошибки, стесняетесь акцента и/или своего незнания
+              языка;
+            </li>
+            <li className="foryouif-bullet">ываорсифыовиаорфиыва</li>
+          </ul>
+        </div>
+        <div className="highlights-block">
+          <ul>
+            <li id="certificate">
+              <h4>
+                СЕРТИФИКАТ <p>Вы получите сертификат</p>
+              </h4>
+            </li>
+            <li id="online">
+              <h4>
+                ОНЛАЙН <p>Курс состоит на 100% из онлайн материала</p>
+              </h4>
+            </li>
+            <li id="schedule">
+              <h4>
+                ГИБКИЙ ГРАФИК <p>Курс состоит на 100% из онлайн материала</p>
+              </h4>
+            </li>
+            <li id="duration">
+              <h4>
+                ДЛИТЕЛЬНОСТЬ 7-8 МЕСЯЦЕВ
+                <p>При 3-4 часах в неделю</p>
+              </h4>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div className="course-structure"></div>
