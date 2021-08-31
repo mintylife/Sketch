@@ -54,9 +54,9 @@ function Sidebar() {
             <span className={hovered}>Курс</span>
           </Link>
 
-          <Link className="sidebar-item" to="/podcasts">
+          <Link className="sidebar-item" to="/course">
             <span className="icon podcasts" />
-            <span className={hovered}>Подкасты</span>
+            <span className={hovered}>Course</span>
           </Link>
 
           <Link className="sidebar-item" to="/games">
