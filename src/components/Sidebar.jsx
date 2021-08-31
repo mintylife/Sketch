@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 import logo from "../assets/logo/logo-orange.svg";

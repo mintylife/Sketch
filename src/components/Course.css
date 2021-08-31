@@ -8,9 +8,11 @@
 
   background-color: #010f1f;
   color: white;
+  overflow: hidden;
 }
 
 .header {
+  display: flex;
   z-index: 0;
   background-color: #f8b239;
   color: white;
@@ -20,6 +22,7 @@
 }
 
 #rectangle {
+  display: flex;
   z-index: 0;
   width: 98%;
   height: 550px;
@@ -30,14 +33,15 @@
 .overview {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   transform: translate(-10px) rotate(5deg);
   padding-top: 80px;
+
+  padding-bottom: 50px;
   padding-left: 75px;
 }
 
-.course-title,
-.second-title {
+.course-title {
   flex: 1;
   z-index: 1;
   font-size: 24pt;
@@ -45,9 +49,19 @@
   color: black;
 }
 
+.second-title {
+  flex: 1;
+  z-index: 1;
+  font-size: 20pt;
+  font-weight: bold;
+  color: black;
+}
+
 .heart-ranking {
+  flex: 1;
   height: 65px;
   color: #fd1100;
+  font-weight: bold;
 }
 
 .people-num {
@@ -56,31 +70,79 @@
 }
 
 .intro-block {
+  display: block;
+  line-height: 1.5;
   color: black;
-  font-size: 14pt;
 }
 
 .info-buttons {
-  color: white;
-  font-size: 14pt;
-  background-color: white;
-  font-family: Hero;
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 25px 25px 0;
 }
 
 #module-num {
-  color: white;
-  font-size: 14pt;
   background-color: #cb426a;
+  /* color: white; */
+  /* font-size: 14pt; */
+  /* font-family: Hero, Arial, Helvetica, sans-serif; */
+  width: fit-content;
+  padding: 5px 25px 5px 25px;
+  margin: 0 25px 0 0;
+  text-transform: none;
+  font-weight: bold;
+  font-family: Hero;
+  color: white;
 }
 #course-type {
-  color: white;
-  font-size: 14pt;
   background-color: #8163f6;
+  /* color: white;
+  font-size: 14pt; */
+  width: fit-content;
+  padding: 5px 25px 5px 25px;
+  margin: 0 25px 0 0;
+  text-transform: none;
+  font-weight: bold;
+  font-family: Hero;
+  color: white;
 }
 #video-num {
-  color: white;
-  font-size: 14pt;
   background-color: #8163f6;
+  /* color: white;
+  font-size: 14pt; */
+  width: fit-content;
+  padding: 5px 25px 5px 25px;
+  margin: 0 25px 0 0;
+  text-transform: none;
+  font-weight: bold;
+  font-family: Hero;
+  color: white;
+}
+
+#enroll-button {
+  background-color: #f8b239;
+  /* color: white;
+  font-size: 14pt; */
+
+  width: fit-content;
+  padding: 5px 25px 5px 25px;
+  margin: 0 25px 0 0;
+  text-transform: none;
+  font-weight: bold;
+  font-family: Hero;
+  color: white;
+}
+
+.info-button {
+  /* color: white;
+  font-size: 14pt; */
+  text-transform: none;
+  font-weight: bold;
+  font-family: Hero;
+  color: white;
 }
 
 .course-information {
