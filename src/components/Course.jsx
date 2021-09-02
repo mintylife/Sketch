@@ -19,7 +19,8 @@ export const Course = (props) => {
             <div className="course-title">{title}</div>
             <div className="second-title">{subtitle}</div>
             <div className="heart-ranking">
-              <LikedByIcon /> <span classname="people-num">135</span>
+              <LikedByIcon />
+              <span className="people-num">135</span>
             </div>
             <p className="intro-block">{description}</p>
             <div className="info-buttons">
@@ -52,33 +53,41 @@ export const Course = (props) => {
               боитесь делать ошибки, стесняетесь акцента и/или своего незнания
               языка;
             </li>
-            <li className="foryouif-bullet">ываорсифыовиаорфиыва</li>
+            <li className="foryouif-bullet">
+              хотите основательно подойти к изучению и, возможно, найти пробелы
+              в уже имеющихся знаниях.
+            </li>
           </ul>
         </div>
         <div className="highlights-block">
-          <ul>
-            <li id="certificate">
-              <h4>
-                СЕРТИФИКАТ <p>Вы получите сертификат</p>
-              </h4>
-            </li>
-            <li id="online">
-              <h4>
-                ОНЛАЙН <p>Курс состоит на 100% из онлайн материала</p>
-              </h4>
-            </li>
-            <li id="schedule">
-              <h4>
-                ГИБКИЙ ГРАФИК <p>Курс состоит на 100% из онлайн материала</p>
-              </h4>
-            </li>
-            <li id="duration">
-              <h4>
-                ДЛИТЕЛЬНОСТЬ 7-8 МЕСЯЦЕВ
-                <p>При 3-4 часах в неделю</p>
-              </h4>
-            </li>
-          </ul>
+          <div className="highlight" id="certificate">
+            <span className="highlight-icon" id="certificate-icon" />
+            <div className="highlight-text">
+              <h4>Сертификат</h4>
+              <p>При успешном окончании курса Вы получите сертификат</p>
+            </div>
+          </div>
+          <div className="highlight" id="online">
+            <span className="highlight-icon" id="online-icon" />
+            <div className="highlight-text">
+              <h4>Онлайн</h4>
+              <p>Весь материал доступен онлайн</p>
+            </div>
+          </div>
+          <div className="highlight" id="schedule">
+            <span className="highlight-icon" id="schedule-icon" />
+            <div className="highlight-text">
+              <h4>Гибкий график</h4>
+              <p>Учитесь, когда и где хотите</p>
+            </div>
+          </div>
+          <div className="highlight" id="duration">
+            <span className="highlight-icon" id="duration-icon" />
+            <div className="highlight-text">
+              <h4>Длительность 7-8 месяцев</h4>
+              <p>При 3-4 часах обучения в неделю</p>
+            </div>
+          </div>
         </div>
       </div>
 

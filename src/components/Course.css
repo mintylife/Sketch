@@ -1,3 +1,17 @@
+:root {
+  --yellow-filter: invert(95%) sepia(39%) saturate(5929%) hue-rotate(336deg)
+    brightness(107%) contrast(99%);
+
+  --purple-filter: invert(50%) sepia(72%) saturate(4644%) hue-rotate(230deg)
+    brightness(97%) contrast(98%);
+
+  --green-filter: invert(68%) sepia(46%) saturate(3275%) hue-rotate(92deg)
+    brightness(98%) contrast(97%);
+
+  --pink-filter: invert(44%) sepia(43%) saturate(6531%) hue-rotate(270deg)
+    brightness(104%) contrast(103%);
+}
+
 .course-container {
   margin: 0;
   flex: 1;
@@ -97,6 +111,7 @@
   font-family: Hero;
   color: white;
 }
+
 #course-type {
   background-color: #8163f6;
   /* color: white;
@@ -109,6 +124,7 @@
   font-family: Hero;
   color: white;
 }
+
 #video-num {
   background-color: #8163f6;
   /* color: white;
@@ -170,9 +186,10 @@
 }
 
 #foryouif-title {
-  flex: 1;
   /* color: #f042ff; */
   color: #fff;
+  margin-bottom: 0;
+  text-decoration: underline;
 }
 
 .bulletpoints-list {
@@ -188,16 +205,65 @@
 
 .highlights-block {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-#certificate {
+.highlight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-#online {
+.highlight-icon {
+  flex: 3;
+  background-repeat: no-repeat;
+  background-size: 54px 54px;
+  background-position: center;
 }
 
-#schedule {
+.highlight-text {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 0 0;
+  padding-top: 0;
+  font-size: 10pt;
 }
 
-#duration {
+h4 {
+  font-size: 14pt;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#certificate-icon {
+  background: url("../assets/icons/aboutcourse-icons/certificate.svg");
+  background-size: 54px 54px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  filter: var(--green-filter);
+}
+
+#online-icon {
+  z-index: 4;
+  filter: var(--yellow-filter);
+  background-image: url("../assets/icons/aboutcourse-icons/video-call.svg");
+}
+
+#schedule-icon {
+  background-image: url("../assets/icons/aboutcourse-icons/calendar.svg");
+
+  filter: var(--purple-filter);
+}
+
+#duration-icon {
+  background-image: url("../assets/icons/aboutcourse-icons/future.svg");
+
+  filter: var(--pink-filter);
 }
