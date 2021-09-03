@@ -91,11 +91,16 @@ export const Course = (props) => {
         </div>
       </div>
       <div className="course-goals">
-        <svg id="goals-icon" />
+        <div id="goals-title-container">
+          <svg id="goals-icon" />
+          <h1 id="goals-title">Цели</h1>
+        </div>
         <div className="goals-container">
           <ol className="goals-list">
-            <li>Понять механизмы работы казахского языка и его логику.</li>
-            <li>
+            <li className="goal">
+              Понять механизмы работы казахского языка и его логику.
+            </li>
+            <li className="goal">
               Заложить хорошую основу знаний, которая в последующем поможет
               эффективней и легче изучать казахский язык.
             </li>
