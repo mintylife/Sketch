@@ -1,0 +1,119 @@
+:root {
+  --yellow-filter: invert(95%) sepia(39%) saturate(5929%) hue-rotate(336deg)
+    brightness(107%) contrast(99%);
+
+  --purple-filter: invert(50%) sepia(72%) saturate(4644%) hue-rotate(230deg)
+    brightness(97%) contrast(98%);
+
+  --green-filter: invert(68%) sepia(46%) saturate(3275%) hue-rotate(92deg)
+    brightness(98%) contrast(97%);
+
+  --pink-filter: invert(44%) sepia(43%) saturate(6531%) hue-rotate(270deg)
+    brightness(104%) contrast(103%);
+}
+/* ! ---------------- SECTION 2 ---------------- ! */
+.course-information {
+  box-sizing: border-box;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  padding-top: 125px;
+  padding-left: 75px;
+  padding-right: 35px;
+  margin-right: 35px;
+
+  width: 100%;
+}
+
+.bulletpoints-block {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#foryouif-title {
+  /* color: #f042ff; */
+  color: #fff;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+.bulletpoints-list {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.bulletpoints-list * {
+  padding-bottom: 10px;
+}
+
+.highlights-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.highlight-icon {
+  flex: 3;
+  background-repeat: no-repeat;
+  background-size: 54px 54px;
+  background-position: center;
+}
+
+.highlight-text {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 0 0;
+  padding-top: 0;
+  font-size: 10pt;
+}
+
+h4 {
+  font-size: 14pt;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#certificate-icon {
+  background: url("../assets/icons/aboutcourse-icons/certificate.svg");
+  background-size: 54px 54px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  filter: var(--green-filter);
+}
+
+#online-icon {
+  z-index: 4;
+  filter: var(--yellow-filter);
+  background-image: url("../assets/icons/aboutcourse-icons/video-call.svg");
+}
+
+#schedule-icon {
+  background-image: url("../assets/icons/aboutcourse-icons/calendar.svg");
+
+  filter: var(--purple-filter);
+}
+
+#duration-icon {
+  background-image: url("../assets/icons/aboutcourse-icons/future.svg");
+
+  filter: var(--pink-filter);
+}

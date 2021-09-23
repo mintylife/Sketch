@@ -1,0 +1,174 @@
+.lesson-container {
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background: linear-gradient(
+    92.69deg,
+    #ecb65b -2.79%,
+    #cb436a 53.76%,
+    #925cd6 103.65%
+  );
+
+  color: #fff;
+  padding: 35px 55px 35px 55px;
+}
+
+.lesson-title-container {
+  align-items: center;
+  align-self: flex-end;
+  background: linear-gradient(
+    92.69deg,
+    #ecb65b -2.79%,
+    #cb436a 53.76%,
+    #925cd6 103.65%
+  );
+  padding: 1px;
+  margin-bottom: 35px;
+}
+
+.lesson-title {
+  padding: 5px 20px 5px 20px;
+
+  background: black;
+
+  font-family: Hero;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+
+  color: #ffffff;
+}
+
+.card-container {
+  flex: 10;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+  box-sizing: border-box;
+  overflow: scroll;
+
+  color: black;
+  width: 100%;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 0px 10px 10px;
+}
+
+.card-header {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card-header * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  height: 65px;
+  padding: 15px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #8163f6;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 10px 0px;
+}
+
+.inform-us-btn {
+  /* background-color: yellow; */
+  padding-right: 15px;
+  color: #c6ccdd;
+}
+
+.inform-us-btn:hover {
+  color: #2e3a59;
+}
+
+.card-content {
+  flex: 10;
+  background-color: green;
+  min-height: 150px;
+  box-sizing: border-box;
+  margin: 35px;
+}
+
+.card-rating {
+  flex: 1;
+  align-items: center;
+  align-self: flex-end;
+  /* background-color: red; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  color: #c6ccdd;
+  margin: 0px 35px 15px 0px;
+}
+
+.rating-face {
+  padding: 0px 5px 0px 5px;
+}
+
+.rating-face:hover {
+  color: #2e3a59;
+}
+
+#happy-face:hover {
+  color: #0afc9d;
+}
+
+#neutral-face:hover {
+  color: #fce921;
+}
+
+#sad-face:hover {
+  color: #db3069;
+}
+
+.lesson-nav {
+  flex: 1;
+  width: 100%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn {
+  /* background-color: orange; */
+  padding: 10px 40px 10px 40px;
+  font-size: 16px;
+  font-weight: bold;
+
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
+  border-radius: 5px;
+}
+.next-btn {
+  padding: 10px 40px 10px 40px;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+
+  background: #f6c659;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}

@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 import logo from "../assets/logo/logo-orange.svg";
+// import logo from "../assets/logo/logo-blue.svg";
+// import logo from "../assets/logo/logo-purple.svg";
 
 import { BiHomeHeart as HomeIcon } from "react-icons/bi";
 import { BsPersonFill as PersonalPageIcon } from "react-icons/bs";
@@ -33,10 +35,12 @@ function Sidebar() {
         onMouseEnter={toggleHover}
         onMouseLeave={toggleHover}
       >
-        <div className="logo-container">
-          <img className="logo" alt="logo" src={logo} />
-          <h1 className={`logo-text ${hovered}`}>QT21</h1>
-        </div>
+        <Link to="/landing">
+          <div className="logo-container">
+            <img className="logo" alt="logo" src={logo} />
+            <h1 className={`logo-text ${hovered}`}>QT21</h1>
+          </div>
+        </Link>
         <div className="half-empty-space" />
         <div className="sidebar-menu content-group">
           <Link className="sidebar-item" to="/home">
@@ -44,7 +48,7 @@ function Sidebar() {
             <p className={hovered}>Главная</p>
           </Link>
 
-          <Link className="sidebar-item" to="/profile">
+          <Link className="sidebar-item" to="/lesson">
             <PersonalPageIcon className="icon profile" />
             <p className={hovered}>Профиль</p>
           </Link>

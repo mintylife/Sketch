@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 @font-face {
   font-family: "Hero";
   src: url("./assets/fonts/Hero-Bold.woff") format("woff");
