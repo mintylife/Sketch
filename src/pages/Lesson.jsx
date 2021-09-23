@@ -11,26 +11,29 @@ function Lesson() {
   var lessonTitle = "Порядок слов в предложении";
   return (
     <div className="lesson-container">
-      <div class="lesson-title-container">
-        <div className="lesson-title">Название Урока</div>
-      </div>
-
-      <div className="card-container">
-        <div class="card-header">
-          <div className="card-title">Название карточки</div>
-          <InformUsIcon className="inform-us-btn" />
-        </div>
-
-        <div className="card-content">Контент карточки</div>
-        <div className="card-rating">
-          <HappyFaceIcon className="rating-face" id="happy-face" />
-          <NeutralFaceIcon className="rating-face" id="neutral-face" />
-          <SadFaceIcon className="rating-face" id="sad-face" />
+      <div class="lesson-header">
+        <div class="lesson-title-container">
+          <div className="lesson-title">Название Урока</div>
         </div>
       </div>
-      <div className="lesson-nav">
-        <div className="back-btn">Назад</div>
-        <div className="next-btn">Вперед</div>
+
+      <div class="lesson-body-container">
+        <div className="card-container">
+          <div class="card-header">
+            <div className="card-title">Название карточки</div>
+            <InformUsIcon className="inform-us-btn" />
+          </div>
+          <div className="card-content">Контент карточки</div>
+          <div className="card-rating">
+            <HappyFaceIcon className="rating-face" id="happy-face" />
+            <NeutralFaceIcon className="rating-face" id="neutral-face" />
+            <SadFaceIcon className="rating-face" id="sad-face" />
+          </div>
+        </div>
+        <div className="lesson-nav">
+          <div className="back-btn">Назад</div>
+          <div className="next-btn">Вперед</div>
+        </div>
       </div>
     </div>
   );
