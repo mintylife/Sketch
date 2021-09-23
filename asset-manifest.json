@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Sketch/static/css/main.ef7f3da1.chunk.css",
+    "main.js": "/Sketch/static/js/main.1d69b2c3.chunk.js",
+    "main.js.map": "/Sketch/static/js/main.1d69b2c3.chunk.js.map",
+    "runtime-main.js": "/Sketch/static/js/runtime-main.db84f43e.js",
+    "runtime-main.js.map": "/Sketch/static/js/runtime-main.db84f43e.js.map",
+    "static/js/2.645b8ec5.chunk.js": "/Sketch/static/js/2.645b8ec5.chunk.js",
+    "static/js/2.645b8ec5.chunk.js.map": "/Sketch/static/js/2.645b8ec5.chunk.js.map",
+    "static/js/3.6ef3d23a.chunk.js": "/Sketch/static/js/3.6ef3d23a.chunk.js",
+    "static/js/3.6ef3d23a.chunk.js.map": "/Sketch/static/js/3.6ef3d23a.chunk.js.map",
+    "index.html": "/Sketch/index.html",
+    "static/css/main.ef7f3da1.chunk.css.map": "/Sketch/static/css/main.ef7f3da1.chunk.css.map",
+    "static/js/2.645b8ec5.chunk.js.LICENSE.txt": "/Sketch/static/js/2.645b8ec5.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Sketch/static/media/Hero-Regular.5b0c022c.woff",
+    "static/media/Sidebar.css": "/Sketch/static/media/video-camera.7e86365f.svg",
+    "static/media/CourseInfo.css": "/Sketch/static/media/video-call.822a4830.svg",
+    "static/media/logo-orange.3eb486f2.svg": "/Sketch/static/media/logo-orange.3eb486f2.svg",
+    "static/media/Course.css": "/Sketch/static/media/mission.7329526f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db84f43e.js",
+    "static/js/2.645b8ec5.chunk.js",
+    "static/css/main.ef7f3da1.chunk.css",
+    "static/js/main.1d69b2c3.chunk.js"
+  ]
+}
