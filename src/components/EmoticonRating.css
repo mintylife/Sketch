@@ -1,0 +1,11 @@
+.card-rating {
+  align-items: center;
+  align-self: flex-end;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  color: #c6ccdd;
+  margin: 0px 35px 15px 0px;
+}

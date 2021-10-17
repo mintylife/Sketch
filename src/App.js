@@ -8,6 +8,7 @@ import Sidebar from "./components/Sidebar";
 import Lesson from "./pages/Lesson";
 import Courses from "./pages/Courses";
 import Landing from "./pages/Landing";
+import Stories from "./pages/Stories";
 import Course from "./components/Course";
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
           <Route path="/landing" component={Landing} />
           <Route path="/lesson" component={Lesson} />
           <Route path="/courses" component={Courses} />
-          <Route path="/course" component={Course} />
+          <Route path="/stories" component={Stories} />
         </Switch>
       </Router>
     </div>

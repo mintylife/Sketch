@@ -1,0 +1,69 @@
+.story-miniature {
+  /* margin: 1rem; */
+  width: 600px;
+  height: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.story-image {
+  flex: 1;
+  background-image: url("../assets/images/Суд_присяжных.png");
+  background-size: cover;
+  padding-right: 5px;
+}
+
+.story-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.story-intro {
+  flex: 1;
+
+  padding-left: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-size: 16px;
+}
+
+.story-description {
+  font-size: 16px;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1em; /* a */
+  max-height: 6em; /* a x number of line to show (ex : 2 line)  */
+}
+
+.story-tags {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.story-tag {
+  font-size: 22px;
+  margin-right: 5px;
+  padding: 3px;
+}
+
+.text-story {
+  background-color: #f7931e;
+  border-radius: 5px;
+}
+
+.audio-available {
+  background-color: #0076fd;
+  border-radius: 5px;
+}
+
+.podcast-story {
+  background-color: #cb426a;
+  border-radius: 5px;
+}

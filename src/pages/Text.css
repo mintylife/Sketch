@@ -1,0 +1,131 @@
+.main-container {
+  margin: 0;
+  /* padding: 35px; */
+  /* overflow: hidden; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: #010f1f;
+  color: white;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  align-items: center;
+  align-self: flex-end;
+  padding: 35px;
+}
+
+.text-illustration-container {
+  width: 100%;
+  margin: 0;
+}
+.text-illustration {
+  width: 100%;
+  max-height: auto;
+}
+
+.learning-language {
+  font-size: 30px;
+  color: #fad220;
+}
+
+.options-icon {
+  fill: #fff;
+  height: 20px;
+}
+
+.text-container {
+  margin: 0;
+  padding-left: 85px;
+  padding-right: 35px;
+  /* overflow: hidden; */
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+
+  background-color: #010f1f;
+  color: #fff;
+}
+
+.text-container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.text-title {
+  /* «Тіл болашағы — балабақшадан басталады» */
+
+  font-family: Hero;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+
+  /* color: #fad220; */
+  color: #ff785a;
+}
+
+.voice-over-text-icon {
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+.levels-icon {
+  width: 2rem;
+}
+
+.text-author {
+  font-style: italic;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.level-selection {
+  /* Эта история адоптирована под разные уровни : ) Поменять с А2 на другой? */
+  font-size: 1.2rem;
+  color: #00ffdb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.level-selection-icon {
+  font-size: 1.2em;
+  padding-right: 0.25rem;
+}
+
+.tags {
+}
+
+.text-body {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.text-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.grouped-icons {
+  font-size: 1.2rem;
+}
