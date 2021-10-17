@@ -1,5 +1,8 @@
 import "./Filter.css";
 import React from "react";
+import { useState } from "react";
+
+import Option from "./Option";
 
 import { BiSliderAlt as FilterIcon } from "react-icons/bi";
 import OptionIcon1 from "../assets/icons/filter/option1.png";
@@ -8,13 +11,26 @@ import OptionIcon3 from "../assets/icons/filter/option3.png";
 import OptionIcon4 from "../assets/icons/filter/option4.png";
 
 function Filter() {
+  const [hovered, setHovered] = useState("inactive");
+  const toggleHover = () => {
+    if (hovered === "inactive") {
+      setHovered("");
+    } else {
+      setHovered("inactive");
+    }
+  };
+
   return (
-    <div className="filter">
+    <div
+      className="filter"
+      onMouseEnter={toggleHover}
+      onMouseLeave={toggleHover}
+    >
       <div class="filter-text">
         <FilterIcon className="filter-icon" />
         Что хотите почитать или послушать?
       </div>
-      <div className="filter-criterias">
+      <div className={`filter-criterias ${hovered}`}>
         <div className="criteria">
           <img
             className="criteria-icon"
@@ -23,18 +39,10 @@ function Filter() {
           />
           <div className="criteria-text">Тип</div>
           <div className="options">
-            <div className="option" id="stories">
-              #рассказы
-            </div>
-            <div className="option" id="podcasts">
-              #подкасты
-            </div>
-            <div className="option" id="stories-with-audio">
-              #рассказы_с_озвучкой
-            </div>
-            <div className="option" id="all">
-              #всё
-            </div>
+            <Option text="рассказы" id="stories" />
+            <Option text="подкасты" id="podcasts" />
+            <Option text="рассказы_с_озвучкой" id="stories-with-audio" />
+            <Option text="все" id="all" />
           </div>
         </div>
 
@@ -46,24 +54,12 @@ function Filter() {
           />
           <div className="criteria-text">Уровень</div>
           <div className="options">
-            <div className="option" id="a2">
-              #A2
-            </div>
-            <div className="option" id="b1">
-              #B1
-            </div>
-            <div className="option" id="b2">
-              #B2
-            </div>
-            <div className="option" id="c1">
-              #C1
-            </div>
-            <div className="option" id="c2">
-              #C2
-            </div>
-            <div className="option" id="for-everyone">
-              #для_всех
-            </div>
+            <Option text="A2" id="a2" />
+            <Option text="B1" id="b1" />
+            <Option text="B2" id="b2" />
+            <Option text="C1" id="c1" />
+            <Option text="C2" id="c2" />
+            <Option text="для_всех" id="for-everyone" />
           </div>
         </div>
 
@@ -75,21 +71,11 @@ function Filter() {
           />
           <div className="criteria-text">Категория</div>
           <div className="options">
-            <div className="option" id="new">
-              #новое
-            </div>
-            <div className="option" id="popular">
-              #популярное
-            </div>
-            <div className="option" id="seen">
-              #просмотренное
-            </div>
-            <div className="option" id="not-seen">
-              #непросмотренное
-            </div>
-            <div className="option" id="any">
-              #любое
-            </div>
+            <Option text="новое" id="new" />
+            <Option text="популярное" id="popular" />
+            <Option text="просмотренное" id="seen" />
+            <Option text="непросмотренное" id="not-seen" />
+            <Option text="любое" id="any" />
           </div>
         </div>
       </div>
