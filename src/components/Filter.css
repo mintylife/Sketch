@@ -1,0 +1,132 @@
+.filter {
+  /* Эта история адоптирована под разные уровни : ) Поменять с А2 на другой? */
+
+  display: flex;
+  flex-direction: column;
+
+  transition: width 0.3s ease;
+  cursor: pointer;
+
+  margin-bottom: 25px;
+}
+
+.filter * {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter-text {
+  font-size: 18px;
+  color: #00ffdb;
+  padding: 0rem 0rem 10px 0rem;
+}
+
+.filter-icon {
+  height: 18px;
+  /* font-size: 16px; */
+  margin-right: 10px;
+}
+
+.filter-criterias {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+}
+
+.criteria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.criteria-icon {
+  height: 8px;
+  margin-right: 20px;
+}
+
+.criteria-text {
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+
+.option {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#stories {
+  background: linear-gradient(90deg, #e3985f -4.5%, #e08b61 107%);
+}
+#podcasts {
+  background: linear-gradient(90deg, #de8462 -3%, #da7763 103.5%);
+}
+#stories-with-audio {
+  background: linear-gradient(90deg, #d87164 0%, #d56566 100%);
+}
+
+#all {
+  background: #d56566;
+}
+
+#a2 {
+  background: linear-gradient(90deg, #de8462 -3%, #da7763 103.5%);
+}
+
+#b1 {
+  background: linear-gradient(90deg, #d87164 0%, #d56566 100%);
+}
+
+#b2 {
+  background: linear-gradient(90.22deg, #d35e67 -2.8%, #d05168 101.31%);
+}
+
+#c1 {
+  background: linear-gradient(90deg, #ce4c6a 0%, #c54e7a 100%);
+}
+
+#c2 {
+  background: linear-gradient(90deg, #c14f81 0%, #b85291 100%);
+}
+
+#for-everyone {
+  background: linear-gradient(90deg, #b45399 -13.5%, #a357b8 114.5%);
+}
+
+#new {
+  background: linear-gradient(90deg, #edde05 0%, #c5ec36 100%);
+}
+
+#popular {
+  background: linear-gradient(
+    89.78deg,
+    #caeb30 15.76%,
+    #b1eb3a 41.71%,
+    #86ea4c 68.7%,
+    #2fe971 99.83%
+  );
+}
+
+#seen {
+  background: linear-gradient(89.78deg, #97eb48 0.19%, #2fe971 99.83%);
+}
+
+#not-seen {
+  background: linear-gradient(
+    89.78deg,
+    #40e96a 9.01%,
+    #27ef5c 32.37%,
+    #30e761 56.24%,
+    #03d13b 90.49%
+  );
+}
+
+#any {
+  background: #03d13b;
+}

@@ -1,9 +1,9 @@
 import React from "react";
 import "./Stories.css";
 import { AiOutlineDownCircle as OptionsIcon } from "react-icons/ai";
-import { BiSliderAlt as FilterIcon } from "react-icons/bi";
 
 import StoryMiniature from "../components/StoryMiniature";
+import Filter from "../components/Filter";
 
 function Stories() {
   var language = "Казахском Языке";
@@ -26,10 +26,7 @@ function Stories() {
       </div>
       <div className="page-body">
         <div className="stories-list-section">
-          <div className="stories-filter">
-            <FilterIcon className="filter-icon" />
-            Что хотите почитать или послушать?
-          </div>
+          <Filter />
           <div className="stories-list">
             <StoryMiniature />
             <StoryMiniature />
