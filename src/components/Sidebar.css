@@ -19,6 +19,13 @@
   color: #fff;
 }
 
+.sidebar-menu {
+  filter: brightness(30%);
+}
+.sidebar-menu:hover {
+  filter: brightness(100%);
+}
+
 .sidebar:hover {
   width: 180px;
 }
