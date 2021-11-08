@@ -31,7 +31,7 @@
 }
 
 .logo-container {
-  margin-top: 15px;
+  margin-top: 5px;
   flex: 0.5;
   display: flex;
   margin-left: -15px;
@@ -39,6 +39,7 @@
   justify-content: center;
   align-items: flex-end;
   height: 60px;
+  text-decoration: none;
 }
 
 .logo {
@@ -49,7 +50,7 @@
 .logo-text {
   font-size: 30pt;
   color: #fff;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .sidebar-menu {
@@ -93,6 +94,8 @@
   /* flex: 2; */
   padding-left: 15px;
   height: 25px;
+  color: white;
+  text-decoration: none;
 }
 
 .inactive {

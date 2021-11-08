@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
+// import logo from "../assets/logo/logo-3dd.png";
 import logo from "../assets/logo/logo-orange.svg";
 // import logo from "../assets/logo/logo-blue.svg";
 // import logo from "../assets/logo/logo-purple.svg";
@@ -35,11 +36,9 @@ function Sidebar() {
         onMouseEnter={toggleHover}
         onMouseLeave={toggleHover}
       >
-        <Link to="/landing">
-          <div className="logo-container">
-            <img className="logo" alt="logo" src={logo} />
-            <h1 className={`logo-text ${hovered}`}>QT21</h1>
-          </div>
+        <Link className="logo-container" to="/landing">
+          <img className="logo" alt="logo" src={logo} />
+          <h1 className={`logo-text ${hovered}`}>QT21</h1>
         </Link>
         <div className="half-empty-space" />
         <div className="sidebar-menu content-group">

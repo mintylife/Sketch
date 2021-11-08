@@ -1,0 +1,175 @@
+:root {
+  --orange: #f79b1e;
+
+  --purple: #8163f6;
+
+  --green: #2be973;
+
+  --pink: #cb426a;
+
+  --blue: #0076fd;
+}
+
+.landing-container {
+  margin: 0;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  overflow: hidden;
+
+  color: white;
+  margin: 35px 35px 35px 75px;
+}
+
+.landing-hero {
+  width: 100%;
+  padding: 100px 0px 100px 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  font-family: Hero;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+
+  color: #ffffff;
+}
+
+.login-btn {
+  padding: 10px 20px 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.landing-subtitle {
+  padding: 5px 0px 5px 0px;
+
+  font-family: Hero;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+
+  /* background: linear-gradient(143.37deg, #fae954 0%, #cb426a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: #f6c659;
+
+  text-align: right;
+}
+
+.landing-title {
+  padding: 5px 0px 5px 0px;
+
+  font-family: Hero;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+
+  color: #ffffff;
+
+  text-align: right;
+}
+
+.landing-main-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-panel {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.service {
+  color: white;
+
+  font-weight: bold;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1;
+}
+
+.service:hover {
+  transform: scale(1.08);
+}
+
+.service-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-icon {
+  width: 54px;
+  margin-right: 12px;
+  filter: contrast(1000%) invert(100%);
+
+  align-self: center;
+}
+
+.service-text {
+  text-align: center;
+}
+
+/* .service-about {
+  display: none;
+} */
+
+/* .service:hover > .service-about {
+  transform: scale(1.08);
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+
+  color: white;
+  text-decoration: underline;
+} */
+
+/* .service-about:hover {
+  display: block;
+  color: white;
+  margin: 15px;
+} */
+
+#grammar-book {
+  background: var(--purple);
+}
+
+#vocab-collections {
+  background: var(--orange);
+}
+
+#our-courses {
+  background: var(--blue);
+}
+
+#practice-material {
+  background: var(--pink);
+}
+
+#question-answer {
+  background-color: var(--green);
+}
