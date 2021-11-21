@@ -68,7 +68,7 @@
 }
 
 .landing-title {
-  padding: 5px 0px 5px 0px;
+  padding: 5px 0px 15px 0px;
 
   font-family: Hero;
   font-style: normal;
@@ -172,4 +172,33 @@
 
 #question-answer {
   background-color: var(--green);
+}
+
+.landing-quote {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 30px 0px 30px 0px;
+}
+
+.auth-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 10px 10px 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.login-text {
+}
+
+.login-icon {
+  padding-left: 5px;
+  width: 18px;
+  filter: contrast(1000%) invert(0%);
 }

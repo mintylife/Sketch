@@ -1,0 +1,107 @@
+.main-container {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: #010f1f;
+  color: white;
+}
+
+.exercise-hero-container {
+  height: 250px;
+  width: 100%;
+
+  padding: 40px 35px 40px 85px;
+
+  background: var(--b-course);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.exercise-hero-text {
+  flex: 3;
+
+  color: white;
+  font-family: Hero;
+  font-style: normal;
+  font-weight: bold;
+}
+
+#topic {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+#topic-translation {
+  font-size: 1rem;
+}
+
+.exercise-hero-button-panel {
+  flex: 1;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.study-button {
+  margin-right: 10px;
+  padding: 10px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  color: black;
+  background: white;
+
+  border-radius: 5px;
+}
+
+.see-handbook-button {
+  font-size: 14px;
+  font-weight: bold;
+
+  color: black;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* !------------------ List of exercises ------------------! */
+
+.exercises-container {
+  width: 100%;
+  padding: 40px 35px 40px 85px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  background-color: #010f1f;
+  color: #fff;
+}
+
+.levels-icon {
+  width: 2rem;
+}
+
+.text-footer {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.grouped-icons {
+  font-size: 1.2rem;
+}

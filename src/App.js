@@ -9,6 +9,7 @@ import Lesson from "./pages/Lesson";
 import Courses from "./pages/Courses";
 import Landing from "./pages/Landing";
 import Stories from "./pages/Stories";
+import Exercises from "./pages/Exercises";
 import Course from "./components/Course";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/lesson" component={Lesson} />
           <Route path="/courses" component={Courses} />
           <Route path="/stories" component={Stories} />
+          <Route path="/exercises" component={Exercises} />
         </Switch>
       </Router>
     </div>

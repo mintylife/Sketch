@@ -1,0 +1,108 @@
+/* !------------------ Exercise------------------! */
+.exercise-container {
+  width: 100%;
+}
+
+.ex-header {
+  display: inline-block;
+  padding: 2px;
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, #7f49e9, #db51d1);
+  border-radius: 5px;
+}
+
+.ex-title-text {
+  display: inline-block;
+  padding: 10px 15px 10px 15px;
+  background-color: #010f1f;
+
+  color: #fad220;
+  font-weight: bold;
+}
+
+.ex-body {
+  width: 100%;
+  display: flex;
+}
+
+/* connect-dots exType */
+
+.ex-body.connect-dots {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 0px;
+
+  display: flex;
+}
+
+.option-text {
+  flex: 5;
+
+  margin: 15px;
+  padding: 20px 30px;
+  border: 1px solid #21a1fd;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* is-correct exType */
+
+.ex-body.is-correct {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 300px;
+}
+
+.current-statement {
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.statement-number {
+}
+
+.statement-text {
+  font-size: 35px;
+}
+
+.answer-button-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-between;
+}
+
+.answer-button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.scroll-statement-button {
+  box-sizing: content-box;
+  background-color: #8a5cff;
+  padding: 10px;
+  border-radius: 100%;
+  max-height: 24px;
+  max-width: 24px;
+}

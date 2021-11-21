@@ -6,6 +6,7 @@ import practiceIcon from "../assets/icons/mainpage-icons/practice.png";
 import qaIcon from "../assets/icons/mainpage-icons/qa.png";
 import vocabIcon from "../assets/icons/mainpage-icons/vocabulary.png";
 import coursesIcon from "../assets/icons/mainpage-icons/courses.png";
+import loginIcon from "../assets/icons/mainpage-icons/login.png";
 
 function Landing() {
   return (
@@ -14,6 +15,10 @@ function Landing() {
         <div className="landing-subtitle">Образовательная платформа</div>
         <div className="landing-title">
           Твой главный помощник в изучении казахского.
+        </div>
+        <div className="auth-panel">
+          <div className="login-text">Вход</div>
+          <img className="login-icon" src={loginIcon} />
         </div>
       </div>
       <div className="landing-main-section">
@@ -41,6 +46,7 @@ function Landing() {
             <div className="service-text">Вопросы & Ответы</div>
           </div>
         </div>
+        <div className="about-us">О нас</div>
       </div>
     </div>
   );
