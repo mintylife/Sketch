@@ -49,6 +49,41 @@ function Exercise({ exType, exTitle, exBody }) {
         <img className="scroll-statement-button" src={NextIcon} />
       </div>
     );
+  } else if (exType === "choose-correct") {
+    let questions = [];
+    let answers = [];
+    let zippedAnswers = [];
+    questions = exBody.map((arr) => arr[0]);
+    answers = exBody.map((arr) => arr.slice(1));
+    zippedAnswers = console.log(questions);
+    exBodyJSX = (
+      <div className={`ex-body ${exType}`}>
+        <table className="choose-correct">
+          {exBody.map((line, index) => (
+            <tr>
+              <td>
+                <div
+                  className="choose-correct-line option-question"
+                  key={index}
+                >
+                  {line[0]}
+                </div>
+              </td>
+              {line.slice(1).map((answer, answer_index) => (
+                <td>
+                  <div
+                    className="choose-correct-line option-answer"
+                    key={answer_index}
+                  >
+                    {answer}
+                  </div>
+                </td>
+              ))}
+            </tr>
+          ))}
+        </table>
+      </div>
+    );
   }
   return (
     <div className={`exercise-container ${exType}`}>

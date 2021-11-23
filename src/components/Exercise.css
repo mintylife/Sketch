@@ -106,3 +106,39 @@
   max-height: 24px;
   max-width: 24px;
 }
+
+/* choose-correct exType */
+.ex-body.choose-correct {
+  display: flex;
+  justify-content: center;
+}
+
+.choose-correct-line {
+  margin: 15px 5px;
+  padding: 10px 20px;
+}
+
+.option-question {
+  font-weight: bold;
+  box-sizing: content-box;
+  color: white;
+  /* border-radius: 5px; */
+}
+
+.option-answer {
+  text-align: center;
+  font-weight: bold;
+
+  box-sizing: content-box;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+td .option-answer:hover {
+  /* background-color: #21a1fd; */
+  /* background-color: #0afc9d; */
+  /* background-color: #fce921; */
+  background-color: #dced31;
+  color: black;
+}
